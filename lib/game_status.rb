@@ -24,10 +24,16 @@ def won?(board)
 end
 
 def full?(board)
-  full_board = board.all? do |index|
-    position_taken?(board, index)
+  counter = 0 
+  while counter < 9
+    #if position_taken ever returns false for any possible space, return false
+    if !position_taken?(board, counter)
+      return false
+    end
+    counter += 1 
   end 
-  full_board
+  #otherwise, return true
+  return true 
 end 
 
 def draw?(board)
