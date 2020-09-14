@@ -46,7 +46,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if won? || full? || draw?
+  if won? || draw?
     return true
   else
     return false
