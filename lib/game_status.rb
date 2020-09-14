@@ -14,6 +14,7 @@ def won?(board)
     if board[win_option[0]] == board[win_option[1]] && board[win_option[0]] == board[win_option[2]]
       return win_option
     end
+    counter += 1
   end
   return false 
 end
