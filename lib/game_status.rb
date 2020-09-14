@@ -55,6 +55,7 @@ def over?(board)
 end 
 
 def winner(board)
+  #if the game is won, return the character present in the winning line
   if won?(board)
     win_line = won?(board)
     return "#{board[win_line[0]]}"
