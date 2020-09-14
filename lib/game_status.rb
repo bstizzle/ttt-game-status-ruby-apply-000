@@ -24,8 +24,7 @@ def won?(board)
 end
 
 def full?(board)
-  counter = 0 
-  while counter < 9
+  board.all?
     #if position_taken ever returns false for any possible space, return false
     if !position_taken?(board, counter)
       return false
