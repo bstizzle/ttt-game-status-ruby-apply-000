@@ -24,7 +24,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?
+  board.all? do |
     #if position_taken ever returns false for any possible space, return false
     if !position_taken?(board, counter)
       return false
