@@ -11,13 +11,11 @@ def won?(board)
   counter = 0 
   while counter < 8
     win_option = WIN_COMBINATIONS[counter]
-    if !(position_taken?(board, win_option[0]))
-      return false   
+    if position_taken?(board, win_option[0]
+      if board[win_option[0]] == board[win_option[1]] && board[win_option[0]] == board[win_option[2]]
+       return win_option
+      end
     end 
-    
-    if board[win_option[0]] == board[win_option[1]] && board[win_option[0]] == board[win_option[2]]
-      return win_option
-    end
     counter += 1
   end
   return false 
