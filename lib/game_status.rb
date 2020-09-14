@@ -24,11 +24,9 @@ def won?(board)
 end
 
 def full?(board)
-  full_board == |index|
+  full_board = board.all? do |index|
     position_taken?(board, index)
   end 
-  #otherwise, return true
-  return true 
 end 
 
 def draw?(board)
