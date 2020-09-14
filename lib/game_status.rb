@@ -11,10 +11,8 @@ def won?(board)
   counter = 0 
   while counter < 8
     win_option = WIN_COMBINATIONS[counter]
-    win_option.each do |position|
-      if (position) == (position + 1) == (position + 2)
-        
-      end 
-    end 
+    if board[win_option[0]] == board[win_option[1]] == board[win_option[2]]
+      return win_option
+    end
   end
 end
