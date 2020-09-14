@@ -16,8 +16,7 @@ def won?(board)
         #return the winning array
         return win_option
       end
-    end 
-    counter += 1
+    end
   end
   #if all winning possibilities fail, whether for an empty space or for not matching, return false
   return false 
