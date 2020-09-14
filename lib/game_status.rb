@@ -13,6 +13,8 @@ def won?(board)
     win_option = WIN_COMBINATIONS[counter]
     win_option.each do |position|
       if (position) == (position + 1) == (position + 2)
+        
+      end 
     end 
   end
 end
