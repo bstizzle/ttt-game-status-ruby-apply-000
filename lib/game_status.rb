@@ -26,3 +26,13 @@ def won?(board)
   #if all winning possibilities fail, whether for an empty space or for not matching, return false
   return false 
 end
+
+def full?(board)
+  counter = 0 
+  while counter < 9
+    if !position_taken?(board, counter)
+      return false
+    end 
+  end 
+  return true 
+end 
