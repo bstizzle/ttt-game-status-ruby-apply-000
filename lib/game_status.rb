@@ -12,7 +12,7 @@ def won?(board)
   while counter < 8
     win_option = WIN_COMBINATIONS[counter]
     win_option.each do |position|
-      
+      if (position) == (position + 1) == (position + 2)
     end 
   end
 end
