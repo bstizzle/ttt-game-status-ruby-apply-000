@@ -27,6 +27,7 @@ def full?(board)
   full_board = board.all? do |index|
     position_taken?(board, index)
   end 
+  full_board
 end 
 
 def draw?(board)
