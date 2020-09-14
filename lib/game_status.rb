@@ -30,10 +30,12 @@ end
 def full?(board)
   counter = 0 
   while counter < 9
+    #if position_taken ever returns false for any possible space, return false
     if !position_taken?(board, counter)
       return false
     end
     counter += 1 
   end 
+  #otherwise, return true
   return true 
 end 
