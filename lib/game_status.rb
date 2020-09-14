@@ -46,6 +46,7 @@ def draw?(board)
 end
 
 def over?(board)
+  #if game is either won or a draw (because the draw method only returns true if the board is also full), return true
   if won?(board) || draw?(board)
     return true
   else
