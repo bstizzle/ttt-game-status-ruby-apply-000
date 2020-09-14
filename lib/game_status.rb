@@ -13,8 +13,7 @@ def won?(board)
     win_option = WIN_COMBINATIONS[counter]
     if board[win_option[0]] == board[win_option[1]]
       return win_option
-    else
-      return false 
     end
+    return false 
   end
 end
