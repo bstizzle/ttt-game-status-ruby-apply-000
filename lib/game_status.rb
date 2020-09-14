@@ -24,12 +24,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |
-    #if position_taken ever returns false for any possible space, return false
-    if !position_taken?(board, counter)
-      return false
-    end
-    counter += 1 
+  board.all? do |index|
+    position_taken?(board, index)
   end 
   #otherwise, return true
   return true 
