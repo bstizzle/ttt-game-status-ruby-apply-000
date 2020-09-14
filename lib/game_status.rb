@@ -56,7 +56,8 @@ end
 
 def winner(board)
   if won?(board)
-    return win_char = "#{board[won?[0]]}"
+    win_line = won?(board)
+    return "#{board[win_line[0]]}"
   else 
     return nil
   end 
