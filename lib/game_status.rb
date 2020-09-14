@@ -11,6 +11,6 @@ def won?(board)
   counter = 0 
   while counter < 8
     win_option = WIN_COMBINATIONS[counter]
-    
+    win_option.each 
   end
 end
