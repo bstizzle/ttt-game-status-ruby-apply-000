@@ -56,9 +56,9 @@ end
 
 def winner(board)
   if won?(board) !=
-    return _character = board[won?[0]]
+    return win_char = board[won?[0]]
   else 
-    nil
+    return nil
   end 
 end 
 
